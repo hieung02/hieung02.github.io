@@ -1,1 +1,1 @@
-Organization Purpose: created game directory
+Organization Purpose: games directory
