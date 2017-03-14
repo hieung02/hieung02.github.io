@@ -12,7 +12,7 @@ setInterval( function (){
     let quotebox = document.getElementById('quote');
     let req = new XMLHttpRequest();
 
-    req.open('GET',"http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1", true);
+    req.open('GET',"https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1", true);
     req.withCredentials = true;
     req.onload = function(){
         if(req.status >= 200 && req.status < 400){
