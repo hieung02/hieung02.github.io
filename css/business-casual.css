@@ -142,6 +142,11 @@ hr {
     color: rgba(0,0,0,0.7);
 }
 
+.thumbnail{
+    border-radius: 5%;
+    /*margin: 0 2px;*/
+}
+
 .img-border {
     float: none;
     margin: 0 auto 0;
