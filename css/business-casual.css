@@ -125,6 +125,10 @@ hr {
     overflow: hidden;
 }
 
+.iframe-outter{
+    border: 1px solid rgba(0,0,0,0.9); 
+}
+
 .iframe_size{
     position: absolute;
     top: 0;
@@ -132,6 +136,10 @@ hr {
     transform: scale(.75);
     height: 100%;
     width: 100%;
+}
+
+.comment{
+    color: rgba(0,0,0,0.7);
 }
 
 .img-border {
