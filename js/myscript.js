@@ -1,4 +1,3 @@
-// let log = console.log;
 
 $(document).ready(function(){
   // <!-- Script to Activate the Carousel -->        
