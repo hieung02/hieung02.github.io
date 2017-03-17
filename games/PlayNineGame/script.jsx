@@ -115,11 +115,11 @@ var NumbersFrame = React.createClass({
   }
 });
 
-var InstructionFrame = React.createClass({
+var InstructionsFrame = React.createClass({
   render: function(){
     return(
       <div className="well text-center">
-        <h2 className="text-center">Game Instruction</h2>
+        <h2 className="text-center">Game Instructions</h2>
         <ol className="text-left">
           <li><span className="bold">Objective:</span> You must select the number(s) in the Number Box to equal the star(s). However, you can <span className="bold">only</span> use the number <span className="bold">once</span>.
           </li>
@@ -269,8 +269,6 @@ var Game = React.createClass({
         redraws = this.state.redraws,
         doneStatus = this.state.doneStatus,
         bottomFrame;
-        
-        instructionFrame = <InstructionFrame />;
       
       if(doneStatus){
         bottomFrame = <DoneFrame doneStatus={this.state.doneStatus}
@@ -297,7 +295,7 @@ var Game = React.createClass({
                        unselectNumber = {this.unselectNumber}/>    
         </div>
           {bottomFrame}
-          <InstructionFrame/>
+          <InstructionsFrame/>
       </div>
     );
   }
