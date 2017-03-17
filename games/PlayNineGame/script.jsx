@@ -127,7 +127,7 @@ var InstructionsFrame = React.createClass({
           </li>
           <li>If the number(s) sum does not equal the star(s), <button className='btn btn-danger btn-xs'><span className="glyphicon glyphicon-remove"></span></button> will appear. If <button className='btn btn-success btn-xs'><span className="glyphicon glyphicon-ok"></span></button> appears, this means the selected number(s) sum is equal to the star(s). Click the <button className='btn btn-success btn-xs'><span className="glyphicon glyphicon-ok"></span></button> to submit your answer.
           </li>
-          <li>If there are no numbers in the Number Box that equal the star(s). You can select the <button className='btn btn-warning btn-xs'><span className="glyphicon glyphicon-refresh"></span></button> to draw new star(s). You <span className="bold">only</span> have 3 draws. Use them wisely.
+          <li>If there are no numbers in the Number Box that equal the star(s). You can select the <button className='btn btn-warning btn-xs'><span className="glyphicon glyphicon-refresh"></span></button> to draw for new star(s). You <span className="bold">only</span> have 3 draws. Use them wisely.
           </li>
           <li>Last, but not least. Have Fun!</li>
         </ol>
