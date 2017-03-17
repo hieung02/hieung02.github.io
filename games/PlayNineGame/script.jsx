@@ -115,6 +115,27 @@ var NumbersFrame = React.createClass({
   }
 });
 
+var InstructionFrame = React.createClass({
+  render: function(){
+    return(
+      <div className="well text-center">
+        <h2 className="text-center">Game Instruction</h2>
+        <ol className="text-left">
+          <li><span className="bold">Objective:</span> You must select the number(s) in the Number Box to equal the star(s). However, you can <span className="bold">only</span> use the number <span className="bold">once</span>.
+          </li>
+          <li>Once you selected the number(s), click the <button className="btn btn-primary btn-xs">=</button>.
+          </li>
+          <li>If the number(s) sum does not equal the star(s), <button className='btn btn-danger btn-xs'><span className="glyphicon glyphicon-remove"></span></button> will appear. If <button className='btn btn-success btn-xs'><span className="glyphicon glyphicon-ok"></span></button> appears, this means the selected number(s) sum is equal to the star(s). Click the <button className='btn btn-success btn-xs'><span className="glyphicon glyphicon-ok"></span></button> to submit your answer.
+          </li>
+          <li>If there are no numbers in the Number Box that equal the star(s). You can select the <button className='btn btn-warning btn-xs'><span className="glyphicon glyphicon-refresh"></span></button> to draw new star(s). You <span className="bold">only</span> have 3 draws. Use them wisely.
+          </li>
+          <li>Last, but not least. Have Fun!</li>
+        </ol>
+      </div>
+    );
+  }
+});
+
 var DoneFrame = React.createClass({
   render: function(){
     return(
@@ -249,6 +270,8 @@ var Game = React.createClass({
         doneStatus = this.state.doneStatus,
         bottomFrame;
         
+        instructionFrame = <InstructionFrame />;
+      
       if(doneStatus){
         bottomFrame = <DoneFrame doneStatus={this.state.doneStatus}
                                  resetGame = {this.resetGame}/>;
@@ -271,10 +294,10 @@ var Game = React.createClass({
                        acceptAnswer = {this.acceptAnswer}
                        redraw = {this.redraw}/>
           <AnswerFrame selectedNumbers = {selectedNumbers}
-                       unselectNumber = {this.unselectNumber}/>
+                       unselectNumber = {this.unselectNumber}/>    
         </div>
-        
-          {bottomFrame}     
+          {bottomFrame}
+          <InstructionFrame/>
       </div>
     );
   }

@@ -46,6 +46,6 @@
   cursor: not-allowed;
 }
 
-.bold {
+span.bold {
   font-weight: bold;
 }
