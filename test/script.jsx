@@ -115,7 +115,7 @@ var NumbersFrame = React.createClass({
   }
 });
 
-var instructionFrame = React.createClass({
+var InstructionFrame = React.createClass({
   render: function(){
     return(
       <div class="well text-center">
@@ -268,7 +268,6 @@ var Game = React.createClass({
         correct = this.state.correct,
         redraws = this.state.redraws,
         doneStatus = this.state.doneStatus,
-        instructionFrame = this.state.instructionFrame,
         bottomFrame;
 
 
@@ -296,8 +295,8 @@ var Game = React.createClass({
           <AnswerFrame selectedNumbers = {selectedNumbers}
                        unselectNumber = {this.unselectNumber}/>
         </div>
-        
-          {!bottomFrame ? instructionFrame:bottomFrame}     
+          {bottomFrame}
+          <InstructionFrame />                
       </div>
     );
   }
