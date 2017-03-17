@@ -125,8 +125,13 @@ hr {
 }
 
 .mini_portfolio{
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
     display: flex;
-    flex-direction: row;
+    -moz-flex-direction: row;
+      -o-flex-direction: row;
+     -ms-flex-direction: row;
+         flex-direction: row;
     padding-bottom: 56.25%;
     padding-top: 35px;
     height: 0;
