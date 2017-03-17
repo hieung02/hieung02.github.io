@@ -276,9 +276,10 @@ var Game = React.createClass({
         bottomFrame = <DoneFrame doneStatus={this.state.doneStatus}
                                  resetGame = {this.resetGame}/>;
       }else{
-        bottomFrame = <NumbersFrame selectedNumbers = {selectedNumbers}
+        bottomFrame = <div><NumbersFrame selectedNumbers = {selectedNumbers}
                       usedNumbers = {usedNumbers}
-                      selectNumber = {this.selectNumber}/>;
+                      selectNumber = {this.selectNumber}/>
+                      <InstructionFrame /></div>;
       }
         
     return(
@@ -297,7 +298,6 @@ var Game = React.createClass({
                        unselectNumber = {this.unselectNumber}/>    
         </div>
           {bottomFrame}
-          <InstructionFrame/>
       </div>
     );
   }
