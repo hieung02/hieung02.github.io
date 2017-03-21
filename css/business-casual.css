@@ -89,21 +89,27 @@ hr {
 .box {
     display:-webkit-flex;
     display: flex;
+    -webkit-flex-direction: column;
+       -moz-flex-direction: column;
+        -ms-flex-direction: column;
+         -o-flex-direction: column;
+            flex-direction: column;
     margin-bottom: 20px;
     padding: 30px 15px;
-    background: #fff;
+    /*background: #fff;*/
     background: rgba(255,255,255,0.9);
 }
 
 .hr_1 {
-    max-width: 100vw;
-    border-style: dashed;
     border-color: #999999;
+    border-style: dashed;
+    margin-top: 0;
+    max-width: 100vw;  
 }
 
 .hr_2 {
-    margin-bottom: 20px;
-    width: 100vw;
+    margin-top: 0;
+    width: 400px;
     opacity: 0;
 }
 
@@ -130,11 +136,11 @@ hr {
     text-decoration: none;
 }
 
-.icon_container {
+/*.icon_container {
     display: -webkit-flex;
     display: flex;
     vertical-align: middle;
-}
+}*/
 
 .icon{
     font-size: 5em;
