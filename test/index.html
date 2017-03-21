@@ -1,22 +1,290 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  <head>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-  </head>
+<head>
 
-  <body>
-  
-    <div id="container"></div>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
     
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
-    <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
-    <script src="https://unpkg.com/react@15/dist/react.js"></script>
-    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
-    <script type="text/jsx" src="script.jsx"></script>
-  </body>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+
+    <title>Hieu Nguyen Portfolio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Devicon CSS -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+    <!-- Custom CSS -->
+    <link href="css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    
+    <div class="brand">Hieu Nguyen</div>
+    <ul class="list-inline intro-social-buttons address-bar">
+        <li>
+            <a href="#portfolio" class="btn btn-default btn-lg"><i class="fa fa-id-card-o"></i> <span class="network-name">Portfolio</span></a>
+        </li>
+        <li>
+            <a href="https://github.com/hieung02" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/hieu-t-nguyen" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+        </li>
+    </ul>
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Hieu Nguyen</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#bio">About</a>
+                    </li>
+                    <li>
+                        <a class='addNav' href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class='addNav' href="https://github.com/hieung02"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a class='addNav' href="https://www.linkedin.com/in/hieu-t-nguyen"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12 text-center">
+                    <div id="carousel-example-generic" class="carousel slide">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators hidden-xs">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div id="quote" class="item active"></div>
+                        </div>
+
+                    </div>
+                    <!--<h2 class="brand-before">
+                        <small>Welcome to</small>
+                    </h2>-->
+                    <h1 class="brand-name">
+                        <span class='dropEffect'>
+                        <span>W</span>
+                        <span>e</span>
+                        <span>l</span>
+                        <span>c</span>
+                        <span>o</span>
+                        <span>m</span>
+                        <span>e</span>
+                        <span>
+                    </h1>
+                    <hr class="tagline-divider">
+                    <h2>
+                        <small>Web Developer
+                            <strong>Hieu Nguyen</strong>
+                        </small>
+                    </h2>
+                    <img src="https://www.codewars.com/users/hieung02/badges/micro" alt="Codewarrior Profile Badges"/>
+                    <button class="btn"><a href="mailto:hieu.webdev@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></button>
+                </div>
+            </div>
+        </div>
+
+        <div id='bio' class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr/>
+                    <h2 class="intro-text text-center">
+                        <strong>About Me</strong>
+                    </h2>
+                    <hr/>
+                    <img id='profile-pic' class="img-responsive img-border img-left" src="img/HNPic3.jpg" alt="intro-pic">
+                    <hr class="visible-xs">
+                    <p>Hello ~ My name is Hieu Nguyen, a business analyst who has pivoted her career to web development because I like puzzles. I started teaching myself web development back in August 2016. With my financial analyst experience, I hope to provide a different perspective to web development.</p>
+                    <p>I like to attend Hackathons, travel, and eat. I have been to London, Paris, Belgium, Versailles, Pica, Florence, Venice, Hong Kong, South Korea, Cambodia, Vietnam, Beijing, Shanghai, Kyoto, Tokyo, Nagasaki, Hiroshima and more to come!!</p>
+                    <p>I am proficient in HTML, CSS, and Bootstrap. I have working knowledge of JavaScript, Node, RESTful API, AJAX, Webpack, Go, Python, jQuery, Jasmine, and I am also familiar with Redux and MVC design patterns. See <a href="#skills" alt="redirect to skills sections">Skills</a> for more.</p>
+                    <p>I am looking for a web development position that would further my software development career.</p>
+                    <p>Please contact me for any web dev opportunities <a id="my_email" href="mailto:hieu.webdev@gmail.com"><i class="fa fa-share" aria-hidden="true"></i> hieu.webdev@gmail.com</a>
+                    </p>            
+                </div>
+            </div>
+        </div>
+            
+        <div id='skills' class="row">
+            <div class="box col-lg-12">
+                <div class="col-lg-12">
+                    <hr/>
+                    <h2 class="intro-text text-center">
+                        <strong>Skills</strong>
+                    </h2>
+                    <hr/>
+                    <div class="col-lg-12">
+                        Proficient
+                        <hr class="hr_1">
+                        <i class="icon col-md-4 devicon-html5-plain-wordmark colored"></i>
+                        <i class="icon col-md-4 devicon-css3-plain-wordmark colored"></i>
+                        <i class="icon col-md-4 devicon-bootstrap-plain-wordmark colored"></i>
+                    </div>
+                    
+                    <hr class="hr_2 col-lg-12"/>
+                    <div class="col-lg-12">
+                        Working Knowledge
+                        <hr class="hr_1">
+                        <i class="icon col-md-2 devicon-javascript-plain colored"></i>
+                        <i class="icon col-md-2 devicon-sass-original colored"></i>
+                        <i class="icon col-md-2 devicon-nodejs-plain-wordmark colored"></i>
+                        <i class="icon col-md-2 devicon-react-original-wordmark colored"></i>
+                        <i class="icon col-md-2 devicon-mongodb-plain-wordmark colored"></i>
+                        <i class="icon col-md-2 devicon-nodewebkit-line-wordmark colored"></i>
+                        <i class="icon col-md-2 devicon-jquery-plain-wordmark colored"></i>
+                        <i class="icon col-md-2 devicon-mysql-plain-wordmark colored"></i>
+                        <i class="icon col-md-2 devicon-wordpress-plain-wordmark colored"></i>
+                        <i class="icon col-md-2 devicon-drupal-plain-wordmark colored"></i>
+                        <i class="icon col-md-2 devicon-git-plain-wordmark colored"></i>
+                    </div>
+
+                    <hr class="hr_2 col-lg-12"/>
+                    <div class="col-lg-12">
+                        Software Development Management Understanding
+                        <hr class="hr_1">
+                        <div class="icon_container">
+                            <button class="btn_icon col-md-3">Agile Methodology</button>
+                            <button class="btn_icon col-md-3">Scrum Methodology</button>
+                            <img class="img_icon col-md-3" src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/JIRA_logo.svg/1280px-JIRA_logo.svg.png" alt="JIRA icon">
+                            <i class="icon col-md-3 devicon-github-plain-wordmark colored"></i>
+                        </div>
+                    </div>
+
+                    <hr class="hr_2 col-lg-12"/>
+                    <div class="col-lg-12">
+                        Skills I Would Like To Learn/Become Better
+                        <hr class="hr_1">
+                        <i class="icon col-md-4 devicon-go-line colored"></i>
+                        <i class="icon col-md-4 devicon-python-plain-wordmark colored"></i>
+                        <i class="icon col-md-4 devicon-postgresql-plain-wordmark colored"></i>
+                    </div>         
+                </div>
+            </div>
+        </div>
+
+        <div id='portfolio' class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr/>
+                    <h2 class="intro-text text-center">
+                        <strong>My Portfolio</strong>
+                    </h2>
+                    <hr/>
+                    <div class="row">
+                        <div class="thumbnail col-lg-4">
+                            <div class="col-lg-12 iframe_container">
+                                <a href="https://hieung02.github.io/games/TicTacToe/" alt="link to TicTacToe"><div class="mini_portfolio"><iframe class="iframe_size" src="https://hieung02.github.io/games/TicTacToe/">
+                                </iframe>
+                                </div></a>    
+                            </div>
+                            <div class="col-lg-12 iframe_container">
+                                <p class="comment text-center">Javascript | MVC | HTML/CSS</p>
+                            </div>
+                        </div>
+                        <div class="thumbnail col-lg-4">
+                            <div class="col-lg-12 iframe_container">
+                                <a href="https://hieung02.github.io/games/PlayNineGame/" alt="link to Play Nine Game"><div class="mini_portfolio"><iframe class="iframe_size" src="https://hieung02.github.io/games/PlayNineGame/"></iframe></div></a>
+                            </div>
+                            <div class="col-lg-12 iframe_container">
+                                <p class="comment text-center">React | JSX | Javascript | ES6 | HTML/CSS</p>
+                            </div>
+                        </div>
+                        <div class="thumbnail col-lg-4">
+                            <div class="col-lg-12 iframe_container">
+                                <a href="https://hieung02.github.io/games/ColorGame/" alt="link to Github"><div class="mini_portfolio"><iframe src="https://hieung02.github.io/games/ColorGame/" class="iframe_size"></iframe></div></a>
+                            </div>
+                            <div class="col-lg-12 iframe_container">
+                                <p class="comment text-center">Javascript | HTML/CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                 </div>   
+            </div>
+        
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="copyright">Copyright &copy; Hieu Nguyen 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <!-- <script src="js/jquery.js"></script> -->
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- My JavaScript -->
+    <script src="js/myscript.js"></script>
+    
+    
+</body>
 
 </html>
-
